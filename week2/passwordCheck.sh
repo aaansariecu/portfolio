@@ -1,5 +1,5 @@
 #!/bin/bash
-value=`cat secret.txt`  #read the value from the text file, and assign it to var value
+value=`cat ../week2/secret.txt`  #read the value from the text file, and assign it to var value
 read -s -p  "Enter your password: " chkpassword #store input into veriable
 echo #move cursor to a new line
 hashpass=$(echo $chkpassword | sha256sum) #new convert into hash var to compare the value of secret.txt 
